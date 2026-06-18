@@ -59,14 +59,18 @@
 
 #### Institutional Committees
 - [cv] 2025–Present  Founder and Member, Columbia College AI Taskforce
-- [cv] 2025–Present  Member, Honors Program Advisory Board ⚠️ *(Self-eval notes say "2025 Honors Advisory Board." CV and earlier log had this as 2023-present based on chair of Honors & Awards. Verify start date.)*
+- [cv] 2025–Present  Member, Honors Program Advisory Board *(Self-eval says 2025; Jon confirmed ongoing as of June 2026. CV currently shows 2023–Present — queued in cv_pending.md to correct to 2025–Present.)*
 - [cv] 2023–2026  Chair, Academic Honors and Awards
 - [cv] 2022–Present  Member, Inclusive Pedagogy Committee
 - [cv] 2026  Member, Textbook Exploration Committee — Group #3: Faculty Engagement and Academic Practice
 
 #### Advising & Mentoring Outcomes
 - [ ] Feb 5, 2026  Emma Russell — accepted to MU Interdisciplinary Neuroscience Program. Outcome tied to mentoring and LoR work.
-- [ ] ⚠️ Winona Whelan — appears on both the LoR list (2025) and as co-author on Challenge Hypothesis: Non-Human Primates (2026). Confirm whether she is a student Jon mentored who became a co-author; if so, note as a mentoring-to-publication outcome.
+- [cv] Winona Whelan — undergraduate co-author on Oxford, J., & Whelan, W. (2026). Challenge Hypothesis: Non-Human Primates. Also on LoR list (2025). Mentoring-to-publication outcome; reflected in Undergraduate Research section of CV.
+- [cv] Oxford, G. K. — undergraduate co-author on Handicap Principle (2026) and Paternal Care: Life History Characteristics (2026). Reflected in Undergraduate Research section of CV.
+- [cv] Clayborn, A. — undergraduate co-author on Prolactin: Impacts of Fatherhood (2023); also conducted independent HRV research (PSYC 328). Reflected in Undergraduate Research section of CV.
+- [cv] Duncan, A. — undergraduate co-author on Sex Dimorphism (2018). Reflected in Undergraduate Research section of CV.
+- [cv] Oxford, D. N. — undergraduate co-author on Co-sleeping (2016); subsequently became graduate student and continuing collaborator. Reflected in Undergraduate Research section of CV.
 
 #### Letters of Recommendation (2025–2026)
 - [ ] Sep 20, 2025  Chloe Adamson
@@ -102,7 +106,7 @@
 ### Professional Growth
 
 #### Presentations
-- [ ] Sep 13, 2025  Show-Me Teaching of Psychology Conference (hosted at Columbia College, New Hall event space). ~40 faculty from Missouri colleges and some high school faculty. Contributed and led conference materials focused on AI pedagogy in psychology education. Session: "Breakfast Club: Faculty Detention" — trained faculty on AI integration strategies using data from student AI-usage survey collected that summer; faculty split into discipline-based discussion groups, each with a sponsor, laptop with AI access, and a discipline-specific artifact as common ground to evaluate AI output. Google Doc of conference materials available. *(Headcount and venue from memory — not separately verified in chat history.)* [→ CV: Presentations — Regional]
+- [cv] Sep 13, 2025  3rd Annual Show-Me Teaching of Psychology Conference — "Empowering Psychology Educators: AI Literacy and Workforce Readiness for the Future." Columbia College, Columbia, MO. 9:30AM–3:30PM. Sponsored by APA Board of Educational Affairs (BEA) Teaching Conference Grant. Organized by Kruti Surti (kdsurti@ccis.edu). Jon designed and delivered the AI literacy workshop and afternoon roundtable materials that anchored the conference theme. Format: panel session + workshop + afternoon roundtables with networking; lunch provided. Fee waived for first 25 high school / 2-year institution educators.
 
 #### Reviewing / Professional Memberships
 - [ ] <!-- TODO: journal, grant, or textbook reviewing 2025 -->
@@ -127,7 +131,7 @@
 - [ ] 2025  AI Taskforce: Agentic AI PSA to Provost — faculty guide addressing autonomous AI browsers capable of completing LMS quizzes unattended; redesigned to provide separate guidance for in-seat vs. asynchronous online (D2L) courses given college's online/military-serving enrollment.
 - [ ] ⚠️  Working with Nathan Eatherton and department heads on vision for custom AI bots — "creating my vision of truly learning custom bots." *(Possible duplicate with a separate ad hoc IT visioning meeting. Verify whether these were one event or two before listing as separate line items.)*
 - [cv] Spring 2025  AI in the Classroom — faculty learning community for online faculty exploring AI integration
-- [ ] Fall 2025  "Breakfast Club: Faculty Detention with Dr. Oxford" — interactive AI integration workshop, Columbia College Fall Faculty Conference *(also listed as Show-Me Conference session above — confirm whether same session or two separate events with same name)*
+- [ ] Fall 2025  "Breakfast Club: Faculty Detention with Dr. Oxford" — interactive AI integration workshop, Columbia College Fall Faculty Conference. *(Separate event from Show-Me Conference — confirmed.)*
 - [ ] Fall 2024  Faculty Learning Community presentation on discipline-specific AI applications, Columbia College Fall Faculty Conference *(note: Fall 2024 — in tenure dossier period; include here for continuity or omit)*
 - [ ] 2025  CTL Workshop Series (exact dates needed):
   - "Teaching and Learning in AI World"
@@ -156,7 +160,6 @@
 
 ## Standing Notes for Next Update
 
-- Confirm: Honors Advisory Board start date — 2023 or 2025?
 - Confirm: Winona Whelan — student mentored to co-authorship?
 - Confirm: "Breakfast Club" session — Show-Me Conference AND Fall Faculty Conference, or same event listed twice?
 - Confirm: Nathan Eatherton meetings — one event or two distinct items?
