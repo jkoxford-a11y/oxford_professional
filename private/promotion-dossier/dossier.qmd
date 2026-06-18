@@ -1,0 +1,12 @@
+---
+title: "Promotion Dossier"
+author: "Jon Oxford"
+date: today
+format:
+  pdf:
+    toc: true
+  html:
+    toc: true
+---
+
+<!-- Populated from source/ criteria and examples. Local render only — never deploy. -->

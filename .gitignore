@@ -1,0 +1,13 @@
+# Quarto render output — never commit rendered files
+cv/_site/
+private/annual-eval/_output/
+private/promotion-dossier/_output/
+
+# Quarto cache
+.quarto/
+*/.quarto/
+**/.quarto/
+
+# OS
+.DS_Store
+Thumbs.db

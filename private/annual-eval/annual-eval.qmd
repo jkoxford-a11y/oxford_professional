@@ -1,0 +1,12 @@
+---
+title: "Annual Self-Evaluation"
+author: "Jon Oxford"
+date: today
+format:
+  pdf:
+    toc: true
+  html:
+    toc: true
+---
+
+<!-- Populated from source/ criteria and activity logs. Local render only — never deploy. -->
