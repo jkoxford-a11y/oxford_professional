@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jonathan Kendrick Oxford, Ph.D. — Curriculum Vitae</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --sidebar-w: 248px;
+  --navy: #0D1B2A;
+  --navy-mid: #162334;
+  --gold: #C4952A;
+  --gold-light: #E2B557;
+  --gold-dim: rgba(196,149,42,0.25);
+  --cream: #FAFAF6;
+  --text: #1C1C2E;
+  --muted: #6B7280;
+  --border: #E8E0D4;
+  --paper: white;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'Lora', Georgia, serif; font-size: 15px; line-height: 1.7; color: var(--text); background: var(--cream); display: flex; min-height: 100vh; }
+
+/* ── SIDEBAR ─────────────────────────────────────────── */
+#sidebar { width: var(--sidebar-w); background: var(--navy); color: #C8BCAA; position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; display: flex; flex-direction: column; z-index: 100; scrollbar-width: thin; scrollbar-color: var(--gold-dim) transparent; }
+#sb-top { padding: 32px 28px 24px; border-bottom: 1px solid rgba(196,149,42,0.2); }
+#sb-mono { width: 52px; height: 52px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--navy); margin-bottom: 14px; letter-spacing: -1px; }
+#sb-name { font-family: 'Playfair Display', serif; font-size: 12.5px; font-weight: 600; color: #E0D4C0; line-height: 1.35; margin-bottom: 5px; }
+#sb-title { font-size: 11px; color: #7A8EA8; line-height: 1.5; }
+#sb-contact { padding: 18px 28px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.ci { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 7px; font-size: 11.5px; line-height: 1.5; }
+.ci-icon { color: var(--gold); font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+.ci a { color: #7A8EA8; text-decoration: none; transition: color .2s; }
+.ci a:hover { color: var(--gold-light); }
+nav#sb-nav { padding: 16px 0; flex: 1; }
+nav#sb-nav a { display: block; padding: 6px 28px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: #6B7A8D; text-decoration: none; border-left: 2px solid transparent; transition: color .15s, padding-left .15s, border-color .15s; }
+nav#sb-nav a:hover { color: #C8BCAA; padding-left: 36px; }
+nav#sb-nav a.active { color: var(--gold); border-left-color: var(--gold); padding-left: 36px; }
+#sb-badge { margin: 12px 20px 20px; padding: 10px 14px; background: rgba(196,149,42,0.1); border: 1px solid rgba(196,149,42,0.25); border-radius: 6px; font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; color: #C4952A; line-height: 1.6; }
+#sb-badge span { display: block; color: #E8C45A; font-size: 10px; margin-bottom: 2px; }
+
+/* ── MAIN ─────────────────────────────────────────────── */
+main { margin-left: var(--sidebar-w); flex: 1; }
+
+/* ── HERO ─────────────────────────────────────────────── */
+#hero { background: var(--navy); color: white; padding: 68px 76px 52px; position: relative; overflow: hidden; }
+#hero::after { content: ''; position: absolute; right: -80px; top: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(196,149,42,.09) 0%, transparent 65%); pointer-events: none; }
+#hero-eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; letter-spacing: .22em; color: var(--gold); text-transform: uppercase; margin-bottom: 18px; }
+#hero h1 { font-family: 'Playfair Display', serif; font-size: 56px; font-weight: 700; letter-spacing: -.025em; line-height: 1.05; color: #F0E8D4; margin-bottom: 6px; }
+#hero-phd { font-family: 'Playfair Display', serif; font-size: 22px; font-style: italic; font-weight: 400; color: var(--gold); margin-bottom: 22px; }
+.hero-meta { font-size: 13.5px; color: #7A8EA8; margin-bottom: 4px; }
+.hero-meta strong { color: #C8BCAA; font-weight: 600; }
+#hero-rule { width: 56px; height: 2px; background: var(--gold); margin: 22px 0; }
+#hero-tagline { font-size: 14px; color: #5A6A7E; font-style: italic; max-width: 500px; line-height: 1.65; }
+#hero-tagline em { color: #7A8EA8; font-style: normal; }
+
+/* ── CONTENT ─────────────────────────────────────────── */
+#content { padding: 60px 76px; }
+
+/* ── SECTIONS ────────────────────────────────────────── */
+.cv-sec { margin-bottom: 56px; }
+.sec-hd { display: flex; align-items: center; gap: 16px; margin-bottom: 30px; }
+.sec-num { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .18em; color: var(--gold); }
+.sec-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; color: var(--text); }
+.sec-line { flex: 1; height: 1px; background: var(--border); }
+
+/* ── TIMELINE ────────────────────────────────────────── */
+.timeline { position: relative; padding-left: 36px; }
+.timeline::before { content: ''; position: absolute; left: 8px; top: 10px; bottom: 10px; width: 2px; background: linear-gradient(to bottom, var(--gold) 0%, #D8CCB8 60%, transparent 100%); }
+.te { position: relative; margin-bottom: 26px; opacity: 0; transform: translateX(-10px); transition: opacity .45s ease, transform .45s ease; }
+.te.vis { opacity: 1; transform: translateX(0); }
+.te-dot { position: absolute; left: -36px; top: 6px; width: 18px; height: 18px; border-radius: 50%; background: var(--cream); border: 2.5px solid var(--gold); }
+.te-dot.now { background: var(--gold); }
+.te-date { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--gold); margin-bottom: 2px; }
+.te-role { font-weight: 600; font-size: 15.5px; line-height: 1.3; }
+.te-inst { font-size: 13.5px; color: var(--muted); margin-top: 2px; }
+.te-note { font-size: 12.5px; color: var(--muted); font-style: italic; margin-top: 3px; }
+
+/* ── EDUCATION ───────────────────────────────────────── */
+.ed { margin-bottom: 20px; }
+.ed-yr { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--gold); }
+.ed-deg { font-weight: 600; font-size: 15.5px; }
+.ed-inst { font-size: 13.5px; color: var(--muted); }
+.ed-note { font-size: 13px; color: var(--muted); font-style: italic; margin-top: 3px; }
+
+/* ── SERVICE HIGHLIGHT ───────────────────────────────── */
+.svc-card { background: var(--navy); border-radius: 10px; padding: 24px 28px; }
+.svc-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .16em; color: var(--gold); text-transform: uppercase; margin-bottom: 8px; }
+.svc-title { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 600; color: #E0D4C0; margin-bottom: 4px; line-height: 1.3; }
+.svc-org { font-size: 13px; color: #7A8EA8; }
+.svc-desc { font-size: 13px; color: #6A7A8E; margin-top: 10px; line-height: 1.65; }
+
+/* ── PUBLICATIONS ────────────────────────────────────── */
+.pub-filters { display: flex; gap: 8px; margin-bottom: 26px; flex-wrap: wrap; }
+.pf { padding: 5px 15px; border-radius: 20px; border: 1px solid var(--border); background: var(--paper); font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; cursor: pointer; color: var(--muted); transition: all .2s; letter-spacing: .04em; }
+.pf:hover { border-color: var(--gold); color: var(--gold); }
+.pf.on { background: var(--gold); border-color: var(--gold); color: white; }
+.pub-grp { margin-bottom: 28px; }
+.pub-grp-lbl { font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.pe { padding: 13px 0; border-bottom: 1px solid #F0E8DC; }
+.pe:last-child { border-bottom: none; }
+.pe.hide { display: none; }
+.pe-text { font-size: 14px; line-height: 1.7; }
+.bdg { display: inline-block; font-family: 'IBM Plex Mono', monospace; font-size: 9px; padding: 2px 8px; border-radius: 3px; margin-left: 8px; font-weight: 500; letter-spacing: .06em; vertical-align: middle; }
+.b-acc { background: #ECFDF5; color: #047857; border: 1px solid #A7F3D0; }
+.b-prep { background: #EFF6FF; color: #1D4ED8; border: 1px solid #BFDBFE; }
+.b-rev { background: #FFF7ED; color: #C2410C; border: 1px solid #FED7AA; }
+.b-pub { background: #F5F3FF; color: #6D28D9; border: 1px solid #DDD6FE; }
+
+/* ── PRESENTATIONS ───────────────────────────────────── */
+.pres-sub { font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 22px 0 10px; }
+.pr { padding: 10px 0 10px 18px; border-left: 2px solid var(--border); margin-bottom: 11px; font-size: 14px; line-height: 1.7; transition: border-color .2s; }
+.pr:hover { border-left-color: var(--gold); }
+.pr-yr { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--gold); margin-bottom: 2px; }
+
+/* ── TEACHING ────────────────────────────────────────── */
+.tg { margin-bottom: 18px; }
+.tg-cat { font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; text-transform: uppercase; letter-spacing: .12em; color: var(--gold); margin-bottom: 5px; }
+.tg-list { font-size: 14px; color: var(--muted); line-height: 1.75; }
+
+/* ── CURRICULUM ENTRIES ──────────────────────────────── */
+.ce { margin-bottom: 16px; padding-left: 18px; border-left: 2px solid var(--gold); }
+.ce-title { font-weight: 600; font-size: 14.5px; line-height: 1.3; }
+.ce-desc { font-size: 13.5px; color: var(--muted); margin-top: 3px; line-height: 1.6; }
+
+/* ── AWARDS ──────────────────────────────────────────── */
+.aw { display: flex; align-items: baseline; gap: 16px; padding: 9px 0; border-bottom: 1px solid #F0E8DC; }
+.aw:last-child { border-bottom: none; }
+.aw-yr { font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; color: var(--gold); min-width: 48px; }
+.aw-nm { font-size: 14.5px; }
+.aw-amt { font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; color: var(--muted); margin-left: auto; }
+
+/* ── SERVICE LIST ────────────────────────────────────── */
+.svc-list { list-style: none; }
+.svc-list li { padding: 7px 0; border-bottom: 1px solid #F0E8DC; font-size: 14px; }
+.svc-list li:last-child { border-bottom: none; }
+
+/* ── SKILLS GRID ─────────────────────────────────────── */
+.sk-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+.sk { background: var(--paper); border: 1px solid var(--border); border-radius: 8px; padding: 14px 18px; }
+.sk-cat { font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; text-transform: uppercase; letter-spacing: .12em; color: var(--gold); margin-bottom: 6px; }
+.sk-items { font-size: 13.5px; color: var(--muted); line-height: 1.65; }
+
+/* ── FADE IN ─────────────────────────────────────────── */
+.fi { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+.fi.vis { opacity: 1; transform: translateY(0); }
+
+/* ── PRINT ───────────────────────────────────────────── */
+@media print {
+  #sidebar { display: none; }
+  main { margin-left: 0; }
+  #hero { background: white !important; color: var(--text) !important; padding: 24px 0; }
+  #hero h1 { color: var(--text); font-size: 36px; }
+  #hero-phd, #hero-eyebrow { color: var(--text); }
+  #hero-rule { background: var(--text); }
+  .hero-meta, #hero-tagline { color: var(--text); }
+  .svc-card { background: #f4f4f4; }
+  .svc-label, .svc-title { color: var(--text); }
+  #content { padding: 24px 0; }
+  .te, .fi { opacity: 1; transform: none; }
+  .cv-sec { page-break-inside: avoid; }
+}
+@media (max-width: 860px) {
+  #sidebar { display: none; }
+  main { margin-left: 0; }
+  #hero, #content { padding-left: 28px; padding-right: 28px; }
+  #hero h1 { font-size: 38px; }
+}
+</style>
+</head>
+<body>
+
+<aside id="sidebar">
+  <div id="sb-top">
+    <div id="sb-mono">JO</div>
+    <div id="sb-name">Jonathan Kendrick Oxford, Ph.D.</div>
+    <div id="sb-title">Associate Professor of Psychology<br>Columbia College of Missouri</div>
+  </div>
+  <div id="sb-contact">
+    <div class="ci"><span class="ci-icon">✉</span><a href="mailto:Jkoxford@ccis.edu">Jkoxford@ccis.edu</a></div>
+    <div class="ci"><span class="ci-icon">✆</span><span>(573) 864-9960</span></div>
+    <div class="ci"><span class="ci-icon">◈</span><span>205 St. Clair Hall<br>Columbia College<br>Columbia, MO 65216</span></div>
+  </div>
+  <nav id="sb-nav">
+    <a href="#appointments">Appointments</a>
+    <a href="#education">Education</a>
+    <a href="#national">National Service</a>
+    <a href="#publications">Publications</a>
+    <a href="#presentations">Presentations</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#undergrad-research">Undergrad Research</a>
+    <a href="#curriculum">Curriculum Dev.</a>
+    <a href="#faculty-dev">Faculty Dev.</a>
+    <a href="#awards">Awards</a>
+    <a href="#affiliations">Affiliations</a>
+    <a href="#institutional">Inst. Service</a>
+    <a href="#skills">Skills</a>
+  </nav>
+  <div id="sb-badge">
+    <span>✦ Maintained with Claude AI</span>
+    Summer 2026 · Columbia College
+  </div>
+</aside>
+
+<main>
+  <header id="hero">
+    <div id="hero-eyebrow">Curriculum Vitae</div>
+    <h1>Jonathan Kendrick<br>Oxford</h1>
+    <div id="hero-phd">Ph.D., Developmental Psychology</div>
+    <div class="hero-meta"><strong>Associate Professor of Psychology</strong> · Columbia College of Missouri</div>
+    <div id="hero-rule"></div>
+    <div id="hero-tagline">Researcher and educator at the intersection of <em>behavioral neuroscience</em>, <em>evolutionary biology</em>, and <em>AI-integrated pedagogy.</em></div>
+  </header>
+
+  <div id="content">
+
+    <!-- APPOINTMENTS -->
+    <section class="cv-sec fi" id="appointments">
+      <div class="sec-hd"><span class="sec-num">01</span><span class="sec-title">Professional Appointments</span><div class="sec-line"></div></div>
+      <div class="timeline">
+        <div class="te"><div class="te-dot"></div><div class="te-date">2024 — 2025</div><div class="te-role">AI Initiatives Fellow</div><div class="te-inst">Center for Teaching and Learning · Columbia College, Columbia MO</div></div>
+        <div class="te"><div class="te-dot now"></div><div class="te-date">2019 — Present</div><div class="te-role">Associate Professor</div><div class="te-inst">Columbia College, Columbia MO</div></div>
+        <div class="te"><div class="te-dot"></div><div class="te-date">2015 — 2019</div><div class="te-role">Assistant Professor</div><div class="te-inst">Southern Arkansas University, Magnolia AR</div></div>
+        <div class="te"><div class="te-dot"></div><div class="te-date">2015</div><div class="te-role">Adjunct Instructor</div><div class="te-inst">Stephens College · Columbia College, Columbia MO</div></div>
+        <div class="te"><div class="te-dot"></div><div class="te-date">2012 — 2014</div><div class="te-role">Postdoctoral Research Fellow</div><div class="te-inst">Alexander Von Humboldt Foundation, Germany</div><div class="te-note">Friedrich-Alexander University, Erlangen-Nürnberg · 109,200 EUR fellowship</div></div>
+        <div class="te"><div class="te-dot"></div><div class="te-date">2011</div><div class="te-role">Adjunct Instructor</div><div class="te-inst">Central Methodist University, Fayette MO</div></div>
+        <div class="te"><div class="te-dot"></div><div class="te-date">2010</div><div class="te-role">Research Associate</div><div class="te-inst">University of Missouri, Columbia MO</div></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="cv-sec fi" id="education">
+      <div class="sec-hd"><span class="sec-num">02</span><span class="sec-title">Education</span><div class="sec-line"></div></div>
+      <div class="ed"><div class="ed-yr">2010</div><div class="ed-deg">Ph.D. Developmental Psychology</div><div class="ed-inst">University of Missouri, Columbia MO</div><div class="ed-note">Dissertation: Individual Differences Affect Hormonal Responses to a Team-based Violent Videogame Competition, but not in Solitary Play.</div></div>
+      <div class="ed"><div class="ed-yr">2008</div><div class="ed-deg">M.A. Developmental Psychology</div><div class="ed-inst">University of Missouri, Columbia MO</div><div class="ed-note">Thesis: Testosterone and Cortisol in Coalitional Competition.</div></div>
+      <div class="ed"><div class="ed-yr">2004</div><div class="ed-deg">B.A. Biological Sciences</div><div class="ed-inst">University of Missouri, Columbia MO</div><div class="ed-note">Focus: Evolutionary Behavioral Ecology, Animal Communication</div></div>
+    </section>
+
+    <!-- NATIONAL SERVICE -->
+    <section class="cv-sec fi" id="national">
+      <div class="sec-hd"><span class="sec-num">03</span><span class="sec-title">National Service</span><div class="sec-line"></div></div>
+      <div class="svc-card">
+        <div class="svc-label">2026</div>
+        <div class="svc-title">Presidential Task Force on AI &amp; Psychology Workforce Readiness</div>
+        <div class="svc-org">Society for the Teaching of Psychology</div>
+        <div class="svc-desc">Developing student-centered curricular resources scaffolding AI proficiency across the undergraduate psychology curriculum — Learning Progression focus area.</div>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="cv-sec fi" id="publications">
+      <div class="sec-hd"><span class="sec-num">04</span><span class="sec-title">Publications</span><div class="sec-line"></div></div>
+      <div class="pub-filters">
+        <button class="pf on" data-f="all">All</button>
+        <button class="pf" data-f="acc">Accepted</button>
+        <button class="pf" data-f="prep">In Preparation</button>
+        <button class="pf" data-f="pub">Published</button>
+      </div>
+
+      <div class="pub-grp" id="grp-acc">
+        <div class="pub-grp-lbl">Accepted</div>
+        <div class="pe" data-s="acc"><div class="pe-text">Oxford, J., &amp; Oxford, D. (Accepted). Imagination is the Key: A public database of daily AI experiments in teaching. <em>Society for the Teaching of Psychology, Teaching Tips.</em><span class="bdg b-acc">Accepted</span></div></div>
+      </div>
+
+      <div class="pub-grp" id="grp-prep">
+        <div class="pub-grp-lbl">Manuscripts in Preparation</div>
+        <div class="pe" data-s="prep"><div class="pe-text">Oxford, J. K., &amp; Schultheiss, O. C. (manuscript in preparation). Birth order and coalitional aggression: Firstborn attenuation of team-based aggressive punishment.<span class="bdg b-prep">In Preparation</span></div></div>
+        <div class="pe" data-s="prep"><div class="pe-text">Oxford, J. K., &amp; Schultheiss, O. C. (manuscript in preparation). Implicit power motivation, testosterone, and serial-response learning after social victory and defeat: A reanalysis and extension of Oxford et al. (2017).<span class="bdg b-prep">In Preparation</span></div></div>
+        <div class="pe" data-s="prep"><div class="pe-text">Oxford, J. K., &amp; Schultheiss, O. C. (manuscript in preparation). Hormonal moderation of political and moral cognition after social competition: Exploratory analyses from Oxford et al. (2017).<span class="bdg b-prep">In Preparation</span></div></div>
+        <div class="pe" data-s="prep"><div class="pe-text">Oxford, J. (In Preparation). <em>Statistics for the Behavioral Sciences.</em> [Open Educational Resource]<span class="bdg b-prep">In Preparation</span></div></div>
+      </div>
+
+      <div class="pub-grp" id="grp-pub">
+        <div class="pub-grp-lbl">Published</div>
+        <div class="pe" data-s="pub"><div class="pe-text">Oxford, J., &amp; Oxford, G. K. (2025). Handicap Principle. In Shackelford, T. K. (Ed.), <em>Encyclopedia of Sexual Psychology and Behavior.</em> Cham: Springer International Publishing.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Oxford, J., &amp; Whelan, W. (2025). Challenge Hypothesis: Non-Human Primates. In Shackelford, T. K. (Ed.), <em>Encyclopedia of Sexual Psychology and Behavior.</em> Cham: Springer International Publishing.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Oxford, J., &amp; Oxford, D. (2025). Hamilton-Zuk Hypothesis. In Shackelford, T. K. (Ed.), <em>Encyclopedia of Sexual Psychology and Behavior.</em> Cham: Springer International Publishing.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Oxford, J., &amp; Oxford, G. K. (2025). Paternal Care: Life History Characteristics. In Shackelford, T. K. (Ed.), <em>Encyclopedia of Sexual Psychology and Behavior.</em> Cham: Springer International Publishing.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Oxford, J., &amp; Clayborn, A. (2023). Prolactin: Impacts of Fatherhood. In Shackelford, T. K. (Ed.), <em>Encyclopedia of Sexual Psychology and Behavior.</em> Cham: Springer International Publishing.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Oxford, J., &amp; Oxford, D. N. (2022). Testosterone: Digit ratios. In Shackelford, T. K. (Ed.), <em>Encyclopedia of Sexual Psychology and Behavior.</em> Cham: Springer International Publishing.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Oxford, J., &amp; Oxford, D. N. (2022). Testosterone: Paternal Investment. In Shackelford, T. K. (Ed.), <em>Encyclopedia of Sexual Psychology and Behavior.</em> Cham: Springer International Publishing.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Oxford, J., &amp; Geary, D. (2019). Life History Evolution in Hominins. In <em>The Handbook of Cognitive Archaeology: Prehistory of Psychology.</em> Routledge.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Oxford, J., &amp; Duncan, A. (2018). Sex Dimorphism. In Weekes-Shackelford, V., Shackelford, T. K., &amp; Weekes-Shackelford, V. A. (Eds.), <em>Encyclopedia of Evolutionary Psychological Science.</em> Cham: Springer.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Oxford, J. K., Tiedtke, J. M., Ossmann, A., Özbe, D., &amp; Schultheiss, O. C. (2017). Endocrine and aggressive responses to competition are moderated by contest outcome, gender, individual versus team competition, and implicit motives. <em>PLOS ONE, 12</em>(7), 1–32.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Oxford, J., &amp; Oxford, D. N. (2016). Co-sleeping. In Weekes-Shackelford, V., Shackelford, T. K., &amp; Weekes-Shackelford, V. A. (Eds.), <em>Encyclopedia of Evolutionary Psychological Science.</em> Cham: Springer.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Bailey, D. H., Winegard, B., Oxford, J., &amp; Geary, D. C. (2012). Sex differences in in-group cooperation vary dynamically with competitive conditions and outcomes. <em>Evolutionary Psychology, 10,</em> 102–119.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Geary, D. C., Bailey, D. H., &amp; Oxford, J. (2011). Reflections on the human family. In Salmon, C. &amp; Shackelford, T. (Eds.), <em>The Oxford Handbook of Evolutionary Family Psychology</em> (pp. 365–385). New York: Oxford University Press.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Oxford, J., Ponzi, D., &amp; Geary, D. C. (2010). Hormonal responses differ when playing violent video games against an ingroup and outgroup. <em>Evolution and Human Behavior, 31,</em> 201–209. <em>Digested in Science, 325, 1605.</em><span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Winegard, B., Bailey, D. H., Oxford, J., &amp; Geary, D. C. (2010). Trade-offs and individual differences in evolved traits. <em>American Psychologist, 65,</em> 928–929.<span class="bdg b-pub">Published</span></div></div>
+        <div class="pe" data-s="pub"><div class="pe-text">Bailey, D. H., Oxford, J. K., &amp; Geary, D. C. (2009). Ultimate and proximate influences on human sex differences. <em>Behavioral and Brain Sciences, 32,</em> 266–267.<span class="bdg b-pub">Published</span></div></div>
+      </div>
+    </section>
+
+    <!-- PRESENTATIONS -->
+    <section class="cv-sec fi" id="presentations">
+      <div class="sec-hd"><span class="sec-num">05</span><span class="sec-title">Presentations</span><div class="sec-line"></div></div>
+
+      <div class="pres-sub">Invited</div>
+      <div class="pr"><div class="pr-yr">2019</div>Oxford, J., Tiedtke, J. M., Ossmann, A., Özbe, D., &amp; Schultheiss, O. C. Endocrine and aggressive responses to competition are moderated by contest outcome, gender, individual versus team competition, and implicit motives. <em>Association for Psychological Science (APS),</em> Washington D.C.</div>
+
+      <div class="pres-sub">Conference — Upcoming 2026</div>
+      <div class="pr"><div class="pr-yr">2026 · STP Virtual Conference on Teaching</div>Oxford, J. Unlocking AI's Potential in Higher Ed: From Imagination to Implementation. <em>Society for the Teaching of Psychology Virtual Conference on Teaching.</em></div>
+      <div class="pr"><div class="pr-yr">2026 · ACT, St. Louis MO · October 15–17</div>Robinson, D., Hammer, E. Y., Boysen, G. A., Chan-Devaere, T. M. V., Henry, M. A., &amp; Oxford, J. Preparing Psychology Students to use AI in the Workforce. <em>STP Annual Conference on Teaching (ACT), St. Louis, MO.</em></div>
+      <div class="pr"><div class="pr-yr">2026 · ACT, St. Louis MO · October 15–17</div>Oxford, J., &amp; Oxford, D. Blueprint First: Building an AI-Assisted Assessment Ecosystem. <em>STP Annual Conference on Teaching (ACT), St. Louis, MO.</em></div>
+
+      <div class="pres-sub">Conference — Past</div>
+      <div class="pr"><div class="pr-yr">2024</div>Oxford, J. Teaching science writing with AI. <em>Society for the Teaching of Psychology.</em></div>
+      <div class="pr"><div class="pr-yr">2018</div>Oxford, J., Tiedtke, J. M., Ossmann, A., Özbe, D., &amp; Schultheiss, O. C. Associations between hormones, aggression, and implicit motives in response to virtual competitions. <em>National Social Science Association, New Orleans.</em></div>
+      <div class="pr"><div class="pr-yr">2015</div>Schultheiss, O. C., &amp; Oxford, J. The steroid-fueled motivational brain: Organizational and activational effects of hormones in implicit motivation. <em>International Convention of Psychological Science, Amsterdam.</em></div>
+
+      <div class="pres-sub">Invited Speaking</div>
+      <div class="pr"><div class="pr-yr">2024 · University of Missouri–Columbia</div>Primate and Hominin Evolution. <em>Evolutionary Ecology.</em></div>
+      <div class="pr"><div class="pr-yr">2023 · Columbia College</div>Teaching and Learning in an AI World (two-part series, co-presented with Blake Nielsen).</div>
+      <div class="pr"><div class="pr-yr">2017 · Texas A&amp;M University–Texarkana</div>Hormonal Responses to Virtual Competitions in Humans.</div>
+      <div class="pr"><div class="pr-yr">2014 · Friedrich-Alexander University</div>The Evolution and Expression of Sex Differences in Humans and Primates · Hormones and Implicit Motivations: Teams versus Individual Virtual Competitions.</div>
+    </section>
+
+    <!-- TEACHING -->
+    <section class="cv-sec fi" id="teaching">
+      <div class="sec-hd"><span class="sec-num">06</span><span class="sec-title">Teaching Experience</span><div class="sec-line"></div></div>
+      <div class="tg"><div class="tg-cat">Biopsychology &amp; Neuroscience</div><div class="tg-list">Physiological Psychology · Neuroscience · Sensation &amp; Perception · Animal Behavior · Evolutionary Biopsychology · Mind Brain and Behavior · Human Evolution</div></div>
+      <div class="tg"><div class="tg-cat">Developmental Psychology</div><div class="tg-list">Lifespan Development · Adolescent Psychology · Child Psychology</div></div>
+      <div class="tg"><div class="tg-cat">Core Psychology</div><div class="tg-list">Introductory Psychology (in-person &amp; online) · Abnormal Psychology · Cognitive Psychology · Integrative Capstone · Independent Research · Applied Psychology · Psychology Internship · Psychology of Emotion · Educational Psychology · Social Science Writing · Learning Theories · Theories of Personality · Human Sexuality · Health Psychology · Statistics for Behavioral Sciences</div></div>
+      <div class="tg"><div class="tg-cat">AI &amp; Technology</div><div class="tg-list">COLL133: Using AI in College (developer &amp; instructor)</div></div>
+    </section>
+
+    <!-- UNDERGRADUATE RESEARCH -->
+    <section class="cv-sec fi" id="undergrad-research">
+      <div class="sec-hd"><span class="sec-num">07</span><span class="sec-title">Undergraduate Research Facilitated</span><div class="sec-line"></div></div>
+      <div class="pr"><div class="pr-yr">2023</div>Oxford, J. K. &amp; Clayborn, A. Acute stress and heart rate variability. Independent Research (PSYC 328). Student co-authored resulting publication.</div>
+      <div class="pr"><div class="pr-yr">2019</div>The effect of sleep hygiene knowledge on academic performance.</div>
+      <div class="pr"><div class="pr-yr">2018</div>Beck's Anxiety Inventory as it relates to social media usage and sleep loss. Presented at Southwestern Psychological Association.</div>
+      <div class="pr"><div class="pr-yr">2017</div>Undergraduate included in literature review on Sexual Dimorphism, resulting in publication.</div>
+      <div class="pr"><div class="pr-yr">2017</div>Five undergraduates included in research study on hormones and competition, resulting in publication (Oxford et al., 2017).</div>
+      <div class="pr"><div class="pr-yr">2016</div>Three students examined differences between traditional and non-traditional students on metacognition, cognitive strategy use, and time management.</div>
+      <div class="pr"><div class="pr-yr">2016</div>Digit ratios and hormone relations within existing post-doc dataset; introduction to multilevel models.</div>
+      <div class="pr"><div class="pr-yr">2016</div>Honors student examined migratory mechanisms in monarch butterfly; led class experiment on directionality during annual migration.</div>
+      <div class="pr"><div class="pr-yr">2016</div>Undergraduate included in literature review on co-sleeping, resulting in publication.</div>
+    </section>
+
+    <!-- CURRICULUM DEV -->
+    <section class="cv-sec fi" id="curriculum">
+      <div class="sec-hd"><span class="sec-num">08</span><span class="sec-title">Curriculum Development &amp; Innovation</span><div class="sec-line"></div></div>
+      <div class="ce"><div class="ce-title">Psychology AI Integration Pilot (Fall 2026)</div><div class="ce-desc">Primary architect. Four-year scaffolded curriculum arc integrating AI literacy across the undergraduate psychology program — AI Literacy → Fluency → Proficiency → Mastery.</div></div>
+      <div class="ce"><div class="ce-title">COLL133: Using AI in College (Fall 2025)</div><div class="ce-desc">Designed foundations course on ethical AI use including custom chatbots, prompt engineering, gamified study skills instruction, and AI-assisted learning strategies.</div></div>
+      <div class="ce"><div class="ce-title">AI Literacy Integration (Fall 2023–Present)</div><div class="ce-desc">Embedded AI literacy components across the psychology curriculum.</div></div>
+
+    </section>
+
+    <!-- FACULTY DEV -->
+    <section class="cv-sec fi" id="faculty-dev">
+      <div class="sec-hd"><span class="sec-num">09</span><span class="sec-title">Faculty Development</span><div class="sec-line"></div></div>
+      <div class="ce"><div class="ce-title">AI Initiatives Fellow Activities (2024–Present)</div><div class="ce-desc">Fall Faculty Conference AI Session (Organizer) · Faculty AI Guide — comprehensive resource for AI integration in teaching · Open Office Hours with the Oxfords (ongoing faculty development series) · Campus-wide AI agent framework proposal (15+ institutional applications) · <em>Imagination is the Key</em> documentation database (143+ documented experiments, public resource)</div></div>
+    </section>
+
+    <!-- AWARDS -->
+    <section class="cv-sec fi" id="awards">
+      <div class="sec-hd"><span class="sec-num">10</span><span class="sec-title">Fellowships &amp; Awards</span><div class="sec-line"></div></div>
+      <div class="aw"><span class="aw-yr">2024</span><span class="aw-nm">TATE Award for Teaching Excellence</span><span class="aw-amt">$1,000</span></div>
+      <div class="aw"><span class="aw-yr">2023</span><span class="aw-nm">Dean's Award for Scholarship</span><span class="aw-amt">$1,000</span></div>
+      <div class="aw"><span class="aw-yr">2018</span><span class="aw-nm">SAU Travel Grant</span><span class="aw-amt">$600</span></div>
+      <div class="aw"><span class="aw-yr">2018</span><span class="aw-nm">Behavioral Social Sciences Travel</span><span class="aw-amt">$500</span></div>
+      <div class="aw"><span class="aw-yr">2018</span><span class="aw-nm">Liberal and Performing Arts Travel</span><span class="aw-amt">$250</span></div>
+      <div class="aw"><span class="aw-yr">2018</span><span class="aw-nm">Faculty Research Grant (SAU)</span><span class="aw-amt">$4,000</span></div>
+      <div class="aw"><span class="aw-yr">2015</span><span class="aw-nm">Behavioral Social Sciences Travel</span><span class="aw-amt">$400</span></div>
+      <div class="aw"><span class="aw-yr">2012–14</span><span class="aw-nm">Alexander von Humboldt Post-doctoral Fellowship</span><span class="aw-amt">109,200 EUR</span></div>
+    </section>
+
+    <!-- AFFILIATIONS -->
+    <section class="cv-sec fi" id="affiliations">
+      <div class="sec-hd"><span class="sec-num">11</span><span class="sec-title">Professional Affiliations</span><div class="sec-line"></div></div>
+      <div class="tg"><div class="tg-cat">2021–Present</div><div class="tg-list"><strong>American Psychological Association (APA)</strong> · Division 2: Teaching of Psychology · Division 6: Society for Behavioral Neuroscience and Comparative Psychology</div></div>
+      <div class="tg"><div class="tg-cat">2019–Present</div><div class="tg-list"><strong>Association for Psychological Science (APS)</strong></div></div>
+      <div class="tg"><div class="tg-cat">2010–2015</div><div class="tg-list">Evolution and Human Behavior Society</div></div>
+      <div class="tg"><div class="tg-cat">2015–2018</div><div class="tg-list">Southwest Psychological Association</div></div>
+      <div class="tg"><div class="tg-cat">2016–2017</div><div class="tg-list">National Social Science Association</div></div>
+    </section>
+
+    <!-- INSTITUTIONAL SERVICE -->
+    <section class="cv-sec fi" id="institutional">
+      <div class="sec-hd"><span class="sec-num">12</span><span class="sec-title">Professional &amp; Institutional Service</span><div class="sec-line"></div></div>
+      <div style="margin-bottom:22px">
+        <div class="pub-grp-lbl">Service to the Profession</div>
+        <div style="font-size:14px;color:var(--muted);line-height:1.75"><strong style="color:var(--text)">Reviewer:</strong> Journal of Research in Personality · Psychoneuroendocrinology · International Journal of Psychophysiology · Social Sciences and Humanities Research Council of Canada · Aggression and Violent Behavior · Sports Medicine<br>External Tenure Review — Missouri State University</div>
+      </div>
+      <div>
+        <div class="pub-grp-lbl">Columbia College Committees</div>
+        <ul class="svc-list">
+          <li>Founder and Member, Columbia College AI Taskforce (2025–Present)</li>
+          <li>Member, Honors Program Advisory Board (2023–Present)</li>
+          <li>Member, Textbook Exploration Committee — Group #3: Faculty Engagement and Academic Practice (2026)</li>
+          <li>Chair, Academic Honors and Awards (2023–2026)</li>
+          <li>Member, Inclusive Pedagogy Committee (2022–current)</li>
+          <li>Member, Academic Facilities, Resources, and Support (2022)</li>
+          <li>Chair, Instructional Facilities, Resources, and Support (2021–2022)</li>
+          <li>Subcommittee Member, Recruitment, Hiring, and Retention</li>
+          <li>Member, Academic Honors and Awards (2022–2023)</li>
+          <li>Member, Psychology Faculty Search Committee (2022–2023)</li>
+          <li>Member, Psychology Remote Faculty Search Committee (2022–2023)</li>
+          <li>Member, High Flex Committee (2021–2022)</li>
+          <li>Member, HASS Curriculum and Academic Policies (2019–2020)</li>
+          <li>Member, Elections and Professional Development (2021–2022)</li>
+        </ul>
+      </div>
+      <div style="margin-top:22px">
+        <div class="pub-grp-lbl">Southern Arkansas University</div>
+        <ul class="svc-list">
+          <li>Chair, Psychology Faculty Search Committee (2017–2019)</li>
+          <li>Chair, Animal Subjects Committee (2017–2019)</li>
+          <li>Statistical Consultation for Criminal Justice and Psychology Faculty (2017–2018)</li>
+          <li>Member, Emerson-Thomas Crone Lecture Series Committee (2017–2018)</li>
+          <li>Member, Liberal and Performing Arts Scholarship Committee (2017)</li>
+        </ul>
+      </div>
+      <div style="margin-top:22px">
+        <div class="pub-grp-lbl">Community Service</div>
+        <ul class="svc-list"><li>Board Member, Magnolia-Columbia County Literacy Council (2017–2019)</li></ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="cv-sec fi" id="skills">
+      <div class="sec-hd"><span class="sec-num">13</span><span class="sec-title">Technical Skills</span><div class="sec-line"></div></div>
+      <div class="sk-grid">
+        <div class="sk"><div class="sk-cat">Statistical Modeling</div><div class="sk-items">R · SAS · SYSTAT · SPSS<br>Specialty: Multilevel Models</div></div>
+        <div class="sk"><div class="sk-cat">AI Integration</div><div class="sk-items">Custom GPT/Claude agent development · Prompt engineering · Microsoft 365 Copilot Studio</div></div>
+        <div class="sk"><div class="sk-cat">Hormone Analysis</div><div class="sk-items">Enzyme-linked immunosorbent assay (ELISA) · Radioimmunoassay (RIA)</div></div>
+        <div class="sk"><div class="sk-cat">Web Development</div><div class="sk-items">HTML/JavaScript interactive modules · GitHub Pages · MkDocs · Quarto · Claude Code</div></div>
+        <div class="sk"><div class="sk-cat">Advanced Programming</div><div class="sk-items">Medialab (Empirisoft) · Inquisit · Direct RT (Millisecond Software)</div></div>
+        <div class="sk"><div class="sk-cat">Research Methods</div><div class="sk-items">Picture Story Exercise (PSE) · PCR · D2L/Brightspace advanced assessment design · CSV test bank development</div></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<script>
+(function(){
+  // Scroll spy
+  const links = document.querySelectorAll('#sb-nav a');
+  const secs = [...document.querySelectorAll('.cv-sec'), document.getElementById('hero')];
+  function spy(){
+    let cur='';
+    secs.forEach(s=>{ if(window.scrollY+130>=s.offsetTop) cur=s.id; });
+    links.forEach(a=>a.classList.toggle('active', a.getAttribute('href')==='#'+cur));
+  }
+  window.addEventListener('scroll', spy, {passive:true});
+  spy();
+
+  // Intersection observer for fade-in + timeline
+  const obs = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target); } });
+  },{threshold:0.06});
+  document.querySelectorAll('.fi,.te').forEach(el=>obs.observe(el));
+
+  // Publication filter
+  document.querySelectorAll('.pf').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.pf').forEach(b=>b.classList.remove('on'));
+      btn.classList.add('on');
+      const f = btn.dataset.f;
+      document.querySelectorAll('.pe').forEach(e=>e.classList.toggle('hide', f!=='all' && e.dataset.s!==f));
+      ['acc','prep','pub'].forEach(g=>{
+        const el=document.getElementById('grp-'+g);
+        if(el) el.style.display=(f==='all'||f===g)?'':'none';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>
