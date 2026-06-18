@@ -1,16 +1,2 @@
-project:
-  type: website
-  output-dir: _site
-
-website:
-  title: "Jon Oxford"
-  navbar:
-    left:
-      - href: index.qmd
-        text: CV
-
-format:
-  html:
-    theme: cosmo
-    css: styles.css
-    toc: true
+# CV is served as static HTML (cv/index.html).
+# Quarto is not used for this project.

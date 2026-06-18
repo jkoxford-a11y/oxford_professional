@@ -1,8 +1,1 @@
----
-title: "Jon Oxford"
-format:
-  html:
-    toc: false
----
-
-<!-- CV content goes here. Populated from source/ material. -->
+# CV is served as cv/index.html — this file is not used.
